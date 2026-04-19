@@ -17,61 +17,60 @@ document.addEventListener('DOMContentLoaded', () => {
     const artworkData = {
         "塗鴉": {
             "Q版": [
-                "images/塗鴉/Q版/281-1.png", 
-                "images/塗鴉/Q版/284-1.png"
+                { src: "images/塗鴉/Q版/281-1.png", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/Q版/284-1.png", tools: ["Clip Studio Paint"] }
             ],
             "塗鴉驚喜包": [
-                "images/塗鴉/塗鴉驚喜包/269.png", 
-                "images/塗鴉/塗鴉驚喜包/282.png",
-                "images/塗鴉/塗鴉驚喜包/285.png",
-                "images/塗鴉/塗鴉驚喜包/293.png",
-                "images/塗鴉/塗鴉驚喜包/305.png",
-                "images/塗鴉/塗鴉驚喜包/312.jpg",
-                "images/塗鴉/塗鴉驚喜包/321-摸頭.jpg",
-                "images/塗鴉/塗鴉驚喜包/321.jpg",
-                "images/塗鴉/塗鴉驚喜包/324-1.png"
+                { src: "images/塗鴉/塗鴉驚喜包/269.png", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/塗鴉驚喜包/282.png", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/塗鴉驚喜包/285.png", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/塗鴉驚喜包/293.png", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/塗鴉驚喜包/305.png", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/塗鴉驚喜包/312.jpg", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/塗鴉驚喜包/321-摸頭.jpg", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/塗鴉驚喜包/321.jpg", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/塗鴉驚喜包/324-1.png", tools: ["Clip Studio Paint"] }
             ],
             "彩色": [
-                "images/塗鴉/彩色/258.jpg",
-                "images/塗鴉/彩色/259.jpg",
-                "images/塗鴉/彩色/260.jpg",
-                "images/塗鴉/彩色/261.jpg",
-                "images/塗鴉/彩色/263.jpg",
-                "images/塗鴉/彩色/264.jpg",
-                "images/塗鴉/彩色/265.jpg",
-                "images/塗鴉/彩色/267.jpg"
+                { src: "images/塗鴉/彩色/258.jpg", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/彩色/259.jpg", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/彩色/260.jpg", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/彩色/261.jpg", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/彩色/263.jpg", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/彩色/264.jpg", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/彩色/265.jpg", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/彩色/267.jpg", tools: ["Clip Studio Paint"] }
             ],
             "黑白": [
-                "images/塗鴉/黑白/172.jpg",
-                "images/塗鴉/黑白/174.jpg",
-                "images/塗鴉/黑白/275.jpg",
-                "images/塗鴉/黑白/330-1.png",
-                "images/塗鴉/黑白/330.png"
+                { src: "images/塗鴉/黑白/172.jpg", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/黑白/174.jpg", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/黑白/275.jpg", tools: ["Clip Studio Paint"] },
+                { src: "images/塗鴉/黑白/330.png", tools: ["Clip Studio Paint"] }
             ]
         },
         "精稿": {
             "全身立繪": [
-                "images/精稿/全身立繪/291.png",
-                "images/精稿/全身立繪/328-1.png",
-                "images/精稿/全身立繪/331-1.png",
-                "images/精稿/全身立繪/451.png",
-                "images/精稿/全身立繪/54210.png"
+                { src: "images/精稿/全身立繪/291.png", tools: ["Clip Studio Paint"] },
+                { src: "images/精稿/全身立繪/328-1.png", tools: ["Clip Studio Paint"] },
+                { src: "images/精稿/全身立繪/331-1.png", tools: ["Clip Studio Paint"] },
+                { src: "images/精稿/全身立繪/451.png", tools: ["Clip Studio Paint"] },
+                { src: "images/精稿/全身立繪/54210.png", tools: ["Clip Studio Paint"] }
             ],
             "精緻插圖": [
-                "images/精稿/精緻插圖/150.png",
-                "images/精稿/精緻插圖/220.png",
-                "images/精稿/精緻插圖/230.png",
-                "images/精稿/精緻插圖/250.png",
-                "images/精稿/精緻插圖/270.png",
-                "images/精稿/精緻插圖/271.png",
-                "images/精稿/精緻插圖/302.png",
-                "images/精稿/精緻插圖/325.png"
+                { src: "images/精稿/精緻插圖/150.png", tools: ["Clip Studio Paint"] },
+                { src: "images/精稿/精緻插圖/220.png", tools: ["Clip Studio Paint", "Procreate"] },
+                { src: "images/精稿/精緻插圖/230.png", tools: ["Clip Studio Paint"] },
+                { src: "images/精稿/精緻插圖/250.png", tools: ["Clip Studio Paint"] },
+                { src: "images/精稿/精緻插圖/270.png", tools: ["Clip Studio Paint"] },
+                { src: "images/精稿/精緻插圖/271.png", tools: ["Clip Studio Paint"] },
+                { src: "images/精稿/精緻插圖/302.png", tools: ["Clip Studio Paint"] },
+                { src: "images/精稿/精緻插圖/325.png", tools: ["Clip Studio Paint", "Procreate", "Blender"] }
             ],
             "胸像 - 半身": [
-                "images/精稿/胸像 - 半身/211-1.png",
-                "images/精稿/胸像 - 半身/240.png",
-                "images/精稿/胸像 - 半身/245.png",
-                "images/精稿/胸像 - 半身/IMG_2885 (1).PNG"
+                { src: "images/精稿/胸像 - 半身/211-1.png", tools: ["Clip Studio Paint"] },
+                { src: "images/精稿/胸像 - 半身/240.png", tools: ["Clip Studio Paint"] },
+                { src: "images/精稿/胸像 - 半身/245.png", tools: ["Clip Studio Paint"] },
+                { src: "images/精稿/胸像 - 半身/IMG_2885 (1).PNG", tools: ["Procreate", "Clip Studio Paint"] }
             ]
         }
     };
@@ -89,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function getCoverImage(mainCategory) {
         const subCats = artworkData[mainCategory];
         for (const key in subCats) {
-            if (subCats[key].length > 0) return subCats[key][0];
+            if (subCats[key].length > 0) return subCats[key][0].src;
         }
         return '';
     }
@@ -99,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
         coversContainer.innerHTML = '';
         Object.keys(artworkData).forEach(category => {
             const coverImg = getCoverImage(category);
-            
+
             const cardHTML = `
                 <div class="cursor-pointer group relative overflow-hidden bg-slate-50 gallery-cover-card w-[90%] sm:w-80 md:w-96 rounded-2xl shadow-sm flex-shrink-0" data-category="${category}">
                     <div style="aspect-ratio: 16/11;" class="overflow-hidden relative">
@@ -133,17 +132,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         renderFilterTags();
         renderImages();
-        
-        const yOffset = -100; 
+
+        const yOffset = -100;
         const element = document.getElementById('gallery');
         const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
-        window.scrollTo({top: y, behavior: 'smooth'});
+        window.scrollTo({ top: y, behavior: 'smooth' });
     }
 
     function renderFilterTags() {
         filterTagsContainer.innerHTML = '';
         const subcategories = Object.keys(artworkData[currentMainCategory]);
-        
+
         const allTag = createFilterTag('ALL', 'all', currentSubCategory === 'all');
         filterTagsContainer.appendChild(allTag);
 
@@ -156,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createFilterTag(label, value, isActive) {
         const btn = document.createElement('button');
         btn.textContent = label;
-        
+
         if (isActive) {
             btn.className = "px-4 py-2 border-b border-slate-800 text-slate-800 tracking-[0.1em] transition-all duration-300";
         } else {
@@ -165,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         btn.addEventListener('click', () => {
             currentSubCategory = value;
-            renderFilterTags(); 
+            renderFilterTags();
             renderImages();
         });
 
@@ -174,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderImages() {
         imagesGrid.innerHTML = '';
-        
+
         const data = artworkData[currentMainCategory];
         let imagesToRender = [];
 
@@ -186,19 +185,11 @@ document.addEventListener('DOMContentLoaded', () => {
             imagesToRender = data[currentSubCategory] || [];
         }
 
-        imagesToRender.forEach((imgSrc, index) => {
-            const delay = (index % 10) * 50; 
-            
-            // Heuristic tools based on path 
-            let tools = [];
-            if (imgSrc.includes('精緻插圖') || imgSrc.includes('全身立繪')) {
-                tools = ['Clip Studio Paint', 'Blender'];
-            } else if (imgSrc.includes('塗鴉')) {
-                tools = ['Procreate'];
-            } else {
-                tools = ['Clip Studio Paint', 'Procreate'];
-            }
-            
+        imagesToRender.forEach((imgObj, index) => {
+            const delay = (index % 10) * 50;
+
+            const imgSrc = imgObj.src;
+            const tools = imgObj.tools || [];
             const toolsAttr = tools.join(',');
 
             const cardHTML = `
@@ -213,9 +204,9 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             imagesGrid.insertAdjacentHTML('beforeend', cardHTML);
         });
-        
-        if(imagesToRender.length === 0) {
-           imagesGrid.innerHTML = '<p class="text-slate-300 font-serif text-center col-span-full py-20 tracking-widest">NO ARTWORKS YET.</p>';
+
+        if (imagesToRender.length === 0) {
+            imagesGrid.innerHTML = '<p class="text-slate-300 font-serif text-center col-span-full py-20 tracking-widest">NO ARTWORKS YET.</p>';
         }
     }
 
@@ -224,11 +215,11 @@ document.addEventListener('DOMContentLoaded', () => {
             detailsContainer.classList.add('hidden');
             coversContainer.classList.remove('hidden');
             currentMainCategory = null;
-            
-            const yOffset = -100; 
+
+            const yOffset = -100;
             const element = document.getElementById('gallery');
             const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
-            window.scrollTo({top: y, behavior: 'smooth'});
+            window.scrollTo({ top: y, behavior: 'smooth' });
         });
     }
 
@@ -236,22 +227,22 @@ document.addEventListener('DOMContentLoaded', () => {
     function createParticles() {
         const container = document.getElementById('particles');
         if (!container) return;
-        const particleCount = 20; 
-        
+        const particleCount = 20;
+
         for (let i = 0; i < particleCount; i++) {
             const p = document.createElement('div');
-            const size = Math.random() * 4 + 2; 
+            const size = Math.random() * 4 + 2;
             const startX = Math.random() * 100;
             const delay = Math.random() * 20;
             const duration = Math.random() * 20 + 20;
-            
+
             p.className = 'absolute rounded-full bg-theme-glow opacity-40 mix-blend-multiply';
             p.style.width = `${size}px`;
             p.style.height = `${size}px`;
             p.style.left = `${startX}%`;
             p.style.bottom = '-20px';
             p.style.animation = 'floatUp ' + duration + 's linear ' + delay + 's infinite';
-            
+
             container.appendChild(p);
         }
     }
@@ -298,10 +289,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const lightboxTools = document.getElementById('lightbox-tools');
     const lightboxClose = document.getElementById('lightbox-close');
 
-    window.openLightbox = function(src, toolsString) {
-        if(!lightbox) return;
+    window.openLightbox = function (src, toolsString) {
+        if (!lightbox) return;
         lightboxImg.src = src;
-        
+
         const tools = toolsString.split(',');
         lightboxTools.innerHTML = tools.map(t => `
             <span class="px-5 py-2 border border-theme-glow/50 bg-theme-glow/10 text-theme-glow rounded-full text-xs font-serif tracking-widest backdrop-blur-md">
@@ -318,8 +309,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 10);
     };
 
-    window.closeLightbox = function() {
-        if(!lightbox) return;
+    window.closeLightbox = function () {
+        if (!lightbox) return;
         lightbox.classList.remove('opacity-100');
         lightbox.classList.add('opacity-0');
         lightboxImg.classList.remove('scale-100');
@@ -327,18 +318,18 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             lightbox.classList.add('hidden');
             lightboxImg.src = '';
-        }, 300); 
+        }, 300);
     };
 
-    if(lightboxClose) lightboxClose.addEventListener('click', window.closeLightbox);
-    if(lightbox) lightbox.addEventListener('click', (e) => {
-        if(e.target === lightbox) {
+    if (lightboxClose) lightboxClose.addEventListener('click', window.closeLightbox);
+    if (lightbox) lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
             window.closeLightbox();
         }
     });
 
     document.addEventListener('keydown', (e) => {
-        if(e.key === 'Escape' && lightbox && !lightbox.classList.contains('hidden')) {
+        if (e.key === 'Escape' && lightbox && !lightbox.classList.contains('hidden')) {
             window.closeLightbox();
         }
     });
