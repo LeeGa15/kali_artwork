@@ -13,6 +13,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log("%c✨ Kali Artwork Layout Loaded ✨", "color: #FFD1DC; font-size: 16px; font-weight: bold;");
 
+    // Security: Anti-download protections for images
+    document.addEventListener('contextmenu', (e) => {
+        if (e.target.tagName === 'IMG') {
+            e.preventDefault();
+        }
+    });
+
+    document.addEventListener('dragstart', (e) => {
+        if (e.target.tagName === 'IMG') {
+            e.preventDefault();
+        }
+    });
+
     // Dynamic Gallery Logic
     const artworkData = {
         "塗鴉": {
