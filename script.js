@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
             p.className = 'absolute rounded-full bg-theme-glow opacity-40 mix-blend-multiply';
             p.style.width = `${size}px`;
             p.style.height = `${size}px`;
-            p.style.left = `${startX}vw`;
+            p.style.left = `${startX}%`;
             p.style.bottom = '-20px';
             p.style.animation = 'floatUp ' + duration + 's linear ' + delay + 's infinite';
             

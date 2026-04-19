@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW" class="scroll-smooth">
+<html lang="zh-TW" class="scroll-smooth overflow-x-hidden w-full">
 
 <head>
     <meta charset="UTF-8">
@@ -42,8 +42,8 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body class="font-sans bg-theme-base text-slate-700 antialiased selection:bg-theme-glow selection:text-white relative overflow-x-hidden">
-
+<body class="font-sans bg-theme-base text-slate-700 antialiased selection:bg-theme-glow selection:text-white relative overflow-x-hidden w-full">
+    <main class="relative w-full max-w-[100vw] overflow-x-hidden">
     <!-- Particle Container -->
     <div id="particles" class="fixed inset-0 pointer-events-none z-0 overflow-hidden"></div>
 
@@ -63,13 +63,13 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="relative min-h-[80vh] flex items-center justify-center pt-32">
+    <section id="hero" class="relative min-h-[80vh] flex items-center justify-center pt-32 overflow-hidden">
         <!-- Floating soft blobs -->
         <div
-            class="absolute top-1/4 left-1/4 w-[30rem] h-[30rem] bg-theme-glow/20 rounded-full mix-blend-multiply filter blur-[80px] animate-blob">
+            class="absolute top-1/4 left-1/4 w-[30rem] max-w-full h-[30rem] bg-theme-glow/20 rounded-full mix-blend-multiply filter blur-[80px] animate-blob">
         </div>
         <div
-            class="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-theme-accent/20 rounded-full mix-blend-multiply filter blur-[80px] animate-blob animation-delay-2000">
+            class="absolute bottom-1/4 right-1/4 w-[30rem] max-w-full h-[30rem] bg-theme-accent/20 rounded-full mix-blend-multiply filter blur-[80px] animate-blob animation-delay-2000">
         </div>
 
         <div class="relative z-10 flex flex-col items-center justify-center px-6">
@@ -216,6 +216,7 @@
         </div>
     </div>
 
+    </main>
     <!-- Custom Script -->
     <script src="./script.js"></script>
 </body>
