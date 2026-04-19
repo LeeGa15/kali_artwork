@@ -49,12 +49,12 @@
 
     <!-- Navigation -->
     <nav class="fixed w-full top-0 z-50 bg-theme-base/60 backdrop-blur-md transition-all duration-300" id="navbar">
-        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
             <a href="#"
-                class="text-2xl font-kali font-semibold tracking-wider text-slate-800 hover:text-theme-glow transition-colors">
+                class="text-2xl font-kali font-semibold tracking-wider text-slate-800 hover:text-theme-glow transition-colors text-center">
                 Kali.
             </a>
-            <div class="space-x-8 text-sm font-medium tracking-wide">
+            <div class="flex justify-center gap-6 md:gap-8 text-sm font-medium tracking-wide">
                 <a href="#hero" class="hover:text-theme-glow transition-colors">Home</a>
                 <a href="#gallery" class="hover:text-theme-glow transition-colors">Gallery</a>
                 <a href="#about" class="hover:text-theme-glow transition-colors">About</a>
@@ -72,9 +72,9 @@
             class="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-theme-accent/20 rounded-full mix-blend-multiply filter blur-[80px] animate-blob animation-delay-2000">
         </div>
 
-        <div class="relative z-10 text-center px-6">
+        <div class="relative z-10 flex flex-col items-center justify-center px-6">
             <h1
-                class="text-7xl md:text-9xl font-kali font-normal tracking-[0.2em] text-slate-800 drop-shadow-sm opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-700 cursor-default">
+                class="text-center text-7xl md:text-9xl font-kali font-normal tracking-[0.2em] text-slate-800 drop-shadow-sm opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-700 cursor-default">
                 Kali
             </h1>
         </div>
@@ -86,7 +86,7 @@
             <!-- Dynamic UI Container -->
             <div id="gallery-app">
                 <!-- Main Categories View -->
-                <div id="category-covers" class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div id="category-covers" class="flex flex-col items-center md:grid md:grid-cols-2 gap-16 mx-auto">
                     <!-- Javascript will populate this -->
                 </div>
 
