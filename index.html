@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kali | Artwork Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Zen+Old+Mincho&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Quicksand', 'sans-serif'],
+                        serif: ['"Zen Old Mincho"', 'serif'],
+                        kali: ['"Playfair Display"', 'serif']
+                    },
+                    colors: {
+                        theme: {
+                            base: '#FEFBF9',   // Vanilla Silk (Warm & Clean bg)
+                            accent: '#D6EAF8', // Daydream Lavender-Blue (Calming secondary elements)
+                            glow: '#FFD1DC',   // Sakura Petal Glow (Highlights & glow)
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="font-sans bg-theme-base text-slate-700 antialiased selection:bg-theme-glow selection:text-white relative">
+
+    <!-- Particle Container -->
+    <div id="particles" class="fixed inset-0 pointer-events-none z-0 overflow-hidden"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-theme-base/60 backdrop-blur-md transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="#"
+                class="text-2xl font-kali font-semibold tracking-wider text-slate-800 hover:text-theme-glow transition-colors">
+                Kali.
+            </a>
+            <div class="space-x-8 text-sm font-medium tracking-wide">
+                <a href="#hero" class="hover:text-theme-glow transition-colors">Home</a>
+                <a href="#gallery" class="hover:text-theme-glow transition-colors">Gallery</a>
+                <a href="#about" class="hover:text-theme-glow transition-colors">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-[80vh] flex items-center justify-center">
+        <!-- Floating soft blobs -->
+        <div
+            class="absolute top-1/4 left-1/4 w-[30rem] h-[30rem] bg-theme-glow/20 rounded-full mix-blend-multiply filter blur-[80px] animate-blob">
+        </div>
+        <div
+            class="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-theme-accent/20 rounded-full mix-blend-multiply filter blur-[80px] animate-blob animation-delay-2000">
+        </div>
+
+        <div class="relative z-10 text-center px-6">
+            <h1
+                class="text-7xl md:text-9xl font-kali font-normal tracking-[0.2em] text-slate-800 drop-shadow-sm opacity-90 hover:opacity-100 hover:scale-[1.02] transition-all duration-700 cursor-default">
+                Kali
+            </h1>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 relative z-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Dynamic UI Container -->
+            <div id="gallery-app">
+                <!-- Main Categories View -->
+                <div id="category-covers" class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                    <!-- Javascript will populate this -->
+                </div>
+
+                <!-- Category Detailed View (Hidden initially) -->
+                <div id="category-details" class="hidden animate-fade-in">
+                    <div class="flex flex-col items-center mb-12 gap-6 relative">
+                        <button id="back-btn"
+                            class="absolute left-0 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700 transition-colors hidden md:flex items-center group">
+                            <span class="text-2xl group-hover:-translate-x-2 transition-transform">&larr;</span>
+                        </button>
+                        <h3 id="current-category-title" class="text-3xl font-serif text-slate-800 tracking-[0.1em]">
+                        </h3>
+                    </div>
+
+                    <!-- Filter Tags Container -->
+                    <div id="filter-tags" class="flex flex-wrap gap-4 justify-center mb-16 font-serif">
+                        <!-- Javascript will populate tags -->
+                    </div>
+
+                    <!-- Images Grid -->
+                    <div id="images-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                        <!-- Javascript will populate images -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 relative z-20 bg-white/40 backdrop-blur-sm border-t border-slate-100">
+        <div class="max-w-4xl mx-auto px-6 flex flex-col items-center">
+
+            <!-- Avatar -->
+            <div class="relative inline-block mb-8 group">
+                <div
+                    class="w-36 h-36 rounded-full overflow-hidden shadow-xl shadow-theme-glow/40 mx-auto transition-transform duration-700 group-hover:scale-105 border-4 border-white">
+                    <img src="images/about/318.jpg" alt="Kali (李嘎)" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Intro Text -->
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-serif font-bold text-slate-800 tracking-widest mb-4">Kali (李嘎) <span
+                        class="text-xl text-slate-300 font-light mx-2">|</span> <span
+                        class="text-xl text-slate-500 font-medium tracking-[0.2em]">Freelance Illustrator</span></h2>
+                <p class="text-lg text-slate-500 font-serif tracking-[0.15em] mt-3">擅長日系角色插畫、人物設計與 2D 美術</p>
+            </div>
+
+            <!-- Details Block -->
+            <div
+                class="w-full max-w-3xl bg-white/80 rounded-3xl p-10 md:p-12 shadow-sm border border-slate-50 text-left font-serif mb-12 flex flex-col md:flex-row gap-12">
+
+                <div class="flex-1">
+                    <h3 class="text-lg font-bold text-slate-700 mb-6 flex items-center tracking-widest"><span
+                            class="text-theme-glow mr-3 text-xl">✦</span> 擅長領域：</h3>
+                    <ul class="space-y-4 text-slate-600 tracking-[0.1em] leading-relaxed">
+                        <li class="flex items-start">
+                            <div class="w-2 h-2 rounded-full bg-theme-accent mt-2 mr-4 flex-shrink-0"></div>日系動漫風格插畫
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-2 h-2 rounded-full bg-theme-accent mt-2 mr-4 flex-shrink-0"></div>角色設計與立繪
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-2 h-2 rounded-full bg-theme-accent mt-2 mr-4 flex-shrink-0"></div>Q版人物與塗鴉
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-2 h-2 rounded-full bg-theme-accent mt-2 mr-4 flex-shrink-0"></div>性感、可愛女性角色
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex-1">
+                    <h3 class="text-lg font-bold text-slate-700 mb-6 flex items-center tracking-widest"><span
+                            class="text-theme-glow mr-3 text-xl">✦</span> 背景：</h3>
+                    <ul class="space-y-4 text-slate-600 tracking-[0.1em] leading-relaxed">
+                        <li class="flex items-start">
+                            <div class="w-2 h-2 rounded-full bg-theme-accent mt-2 mr-4 flex-shrink-0"></div>數位媒體設計系
+                            動畫遊戲組 就讀中
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-2 h-2 rounded-full bg-theme-accent mt-2 mr-4 flex-shrink-0"></div>具備 2D 插畫與 3D
+                            輔助概念
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Links / Contact -->
+            <div class="flex justify-center gap-6">
+                <a href="https://www.facebook.com/leega.15" target="_blank" rel="noopener noreferrer"
+                    class="w-14 h-14 flex items-center justify-center rounded-full bg-white text-slate-400 text-xl shadow-sm hover:bg-theme-glow hover:text-white hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/cc_kali?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank" rel="noopener noreferrer"
+                    class="w-14 h-14 flex items-center justify-center rounded-full bg-white text-slate-400 text-xl shadow-sm hover:bg-theme-glow hover:text-white hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://x.com/c___kali" target="_blank" rel="noopener noreferrer"
+                    class="w-14 h-14 flex items-center justify-center rounded-full bg-white text-slate-400 text-xl shadow-sm hover:bg-theme-glow hover:text-white hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="mailto:choeyeongj7@gmail.com" target="_blank" rel="noopener noreferrer"
+                    class="w-14 h-14 flex items-center justify-center rounded-full bg-white text-slate-400 text-xl shadow-sm hover:bg-theme-glow hover:text-white hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-400 text-xs tracking-widest font-kali z-20 relative">
+        &copy; 2026 KALI ARTWORKS.
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox"
+        class="fixed inset-0 z-[100] bg-slate-900/90 backdrop-blur-md hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
+        <button id="lightbox-close"
+            class="absolute top-6 right-6 lg:top-10 lg:right-10 text-slate-300 text-5xl hover:text-theme-glow transition-colors z-10">&times;</button>
+        <div class="relative max-w-6xl max-h-[90vh] w-full px-6 flex flex-col items-center">
+            <img id="lightbox-img" src=""
+                class="max-h-[80vh] max-w-full object-contain rounded-md shadow-2xl transform scale-95 transition-transform duration-300">
+            <div id="lightbox-tools" class="mt-8 flex flex-wrap gap-4 justify-center font-serif">
+                <!-- Javascript will populate tools badge -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
