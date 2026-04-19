@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const coverImg = getCoverImage(category);
             
             const cardHTML = `
-                <div class="cursor-pointer group relative overflow-hidden bg-slate-50 gallery-cover-card" data-category="${category}">
+                <div class="cursor-pointer group relative overflow-hidden bg-slate-50 gallery-cover-card w-[90%] sm:w-80 md:w-96 rounded-2xl shadow-sm flex-shrink-0" data-category="${category}">
                     <div style="aspect-ratio: 16/11;" class="overflow-hidden relative">
                         <img src="${coverImg}" alt="${category}" class="absolute inset-0 w-full h-full object-cover image-scale-anim opacity-80 group-hover:opacity-100">
                     </div>
